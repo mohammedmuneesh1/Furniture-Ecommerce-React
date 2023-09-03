@@ -1,0 +1,86 @@
+export const UserData=[{
+    id:0,
+    name:"muneesh",
+    password:"1",
+    email:"muneesh@gmail.com",
+    type:"admin"
+},
+{
+    id:1,
+    name:"saleek",
+    password:"saleek123",
+    email:"saleek@gmail.com",
+    type:"user"
+}
+,
+{
+    id:2,
+    name:"murthasa",
+    password:"murthasa123",
+    email:"murthasa@gmail.com",
+    type:"user"
+}
+,
+{
+    id:3,
+    name:"ashique ali",
+    password:"ashiqueali123",
+    email:"ashiqueali@gmail.com",
+    type:"user"
+}
+,
+{
+    id:4,
+    name:"rasiya",
+    password:"rasiya123",
+    email:"rasiya@gmail.com",
+    type:"user"
+}
+,
+{
+    id:5,
+    name:"febin",
+    password:"febin123",
+    email:"febin@gmail.com",
+    type:"user"
+},
+{
+    id:6,
+    name:"abid",
+    password:"abid123",
+    email:"abid@gmail.com",
+    type:"user"
+}
+,
+{
+    id:7,
+    name:"salman faris",
+    password:"salman123",
+    email:"salman@gmail.com",
+    type:"user"
+}
+,
+{
+    id:8,
+    name:"ameen",
+    password:"ameen123",
+    email:"ameen@gmail.com",
+    type:"user"
+}
+,
+{
+    id:9,
+    name:"prajeesh",
+    password:"prajeesh123",
+    email:"prajeesh@gmail.com",
+    type:"user"
+}
+,
+{
+    id:10,
+    name:"binshad",
+    password:"binshad123",
+    email:"binshad@email.com",
+    type:"user"
+}
+]
