@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import { MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from "mdb-react-ui-kit";
 import { MyData } from "../Main-Component/MyData";
+import { useNavigate } from "react-router-dom";
 
 export default function AallProduct() {
   const { item,setItem ,removeItem} = useContext(MyData);
+  const navigate=useNavigate();
   
  
 
@@ -34,7 +36,7 @@ export default function AallProduct() {
               <td>{value.name.slice(0, 30)}</td>
               <td>{value.price}</td>
               <td className="pe-0">
-                <MDBBtn>EDIT</MDBBtn>
+                <MDBBtn onClick={()=>navigate(`/Admin/ProductEdit/${value.id}`)}>EDIT</MDBBtn>
               </td>
               <td className="ps-0">
                 <MDBBtn  color="danger" onClick={()=>removeItem(index)}>

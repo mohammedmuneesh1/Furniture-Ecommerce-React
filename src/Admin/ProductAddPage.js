@@ -11,7 +11,7 @@ export default function ProductAddPage() {
     e.preventDefault(e);
     const imgurl = e.target.imgurl.value.trim();
     const Pname = e.target.Pname.value.trim();
-    const Pprice = e.target.Pprice.value.trim();
+    const Pprice = parseInt(e.target.Pprice.value.trim());
     const Pcategory = e.target.Pcategory.value.trim();
     if (Pcategory === "ptype") {
       alert("Please select a valid category.");
@@ -87,9 +87,9 @@ export default function ProductAddPage() {
           <select
             style={{
               width: "100%",
-              Padding: "15px 0px",
+              height:"40px",
               outline: "none",
-              border: "none",
+             background:"none"
             }}
             name="Pcategory"
             required

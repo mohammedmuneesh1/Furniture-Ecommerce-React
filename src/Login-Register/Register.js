@@ -38,6 +38,8 @@ const userreg=(e)=>{
           password: pass,
           email:email,
           type: "user",
+          order:[]
+
         };
         
         setUser([...user, newUser]);

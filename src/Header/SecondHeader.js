@@ -17,11 +17,11 @@ const SecondHeader = () => {
 
 
   const navigate=useNavigate();
-  const {user,lstatus,setLstatus,logname,setLogname,close,setClose,item,cart} =useContext(MyData);
+  const {user,lstatus,setLstatus,logname,setLogname,close,setClose,item,cart,displayname,setDisplayname} =useContext(MyData);
 //LSTATUS TRUE BY DEFAULT;
 //CLOSE USESTATE FALSE BY DEFAULT;
   const [state,setState]=useState(false);
-  const [displayname,setDisplayname]=useState("");
+
 // [--------- const [close,setClose]=useState(false)---------------] for study purpose (moving this to app.js to pass through usecontext);
 
  

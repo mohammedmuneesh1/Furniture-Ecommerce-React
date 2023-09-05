@@ -17,6 +17,14 @@ const Items = () => {
   const {item,setItem}=useContext(MyData);
   const disP=item.slice(0,8); //to display first 8 products only
   console.log(item);
+
+
+  const handlePrice = (price) => {
+    const formattedPrice = Number(price).toLocaleString('en-IN'); // 'en-IN' for Indian numbering system (e.g., 1,23,456.00)
+    return '₹' + formattedPrice;
+  };
+
+
   return (
     <>
       <MDBContainer fluid className="my-5 text-center">
@@ -70,7 +78,7 @@ const Items = () => {
           <a className="text-reset">
             <p className="mb-2 mb-lg-4 text-muted card-category " >{value.category}</p>
           </a>
-          <h6 className="mb-2 card-price"><b>₹</b>{value.price}</h6>
+          <h6 className="mb-2 card-price">{handlePrice(value.price)}</h6>
         </MDBCardBody>
       </MDBCard>
 

@@ -15,7 +15,7 @@ import { MyData } from "../Main-Component/MyData";
 import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Cart() {
-  const { cart, setCart } = useContext(MyData);
+  const { cart, setCart,user,setUser,displayname,setDisplayname } = useContext(MyData);
   const navigate=useNavigate();
   
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Cart() {
 
   const qtyplus = (itemId) => {
     const cartPlus = cart.map((value) => {
-      console.log(value);
+      // console.log(value);
       if (value.id === parseInt(itemId)) {
         return { ...value, quantity: value.quantity + 1 }; //value = {id , cateo ,quantity ,quantity:}
       }
@@ -48,8 +48,8 @@ export default function Cart() {
 
   const totalPrice = cart.length > 0
   ? cart.reduce((total, value) => {
-      const itemprice = parseFloat(value.price.replace(/,/g, ""));
-      return total + parseInt(itemprice) * value.quantity;
+     
+      return total + value.price * value.quantity;
     }, 0)
   : 0;
 
@@ -59,11 +59,43 @@ export default function Cart() {
 
   }
 
-
-
-
-
+  const orderupdate = (e) => {
+    e.preventDefault();
   
+    if (cart.length !== 0) {
+      const Orderdetails = cart.map((value, index) => ({
+        Oid: 11, // Adding 1 to create a unique identifier for each order
+        Opname: value.name,
+        Oqty: value.quantity,
+        Opprice: value.price,
+      }));
+ console.log(Orderdetails);
+  
+     const Profilechk=user.map((value)=>{
+      console.log(value.name === displayname)
+      console.log(value.name)
+      if(value.name === displayname){
+        return {
+          ...value,
+          order: [...value.order, ...Orderdetails],
+        };
+      }
+      return value;
+     })
+     console.log(Profilechk);
+     setUser(Profilechk);
+     alert("Order placed Successfully");
+     setCart([]);
+      
+    }
+
+
+
+     else {
+      alert("cart is empty")
+    }
+  };
+
 
 
 
@@ -192,7 +224,7 @@ export default function Cart() {
                         Payment
                       </MDBTypography>
 
-                      <form className="mb-5">
+                      <form className="mb-5" onSubmit={orderupdate}>
                         <MDBInput
                           className="mb-5"
                           label="Card number"
@@ -242,7 +274,7 @@ export default function Cart() {
                           <a href="#!"> obcaecati sapiente</a>.
                         </p>
 
-                        <MDBBtn block size="lg">
+                        <MDBBtn block size="lg" type="submit">
                           Buy now
                         </MDBBtn>
 

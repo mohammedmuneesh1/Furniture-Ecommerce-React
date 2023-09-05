@@ -49,7 +49,7 @@ function App() {
   const [logname, setLogname] = useState("");
   const [close, setClose] = useState(false);
   const [cart, setCart] = useState([]);
-
+  const [displayname,setDisplayname]=useState("");
   //code to remove header and footer admin dashboard
   const location = useLocation();
   const HeadFoot = location.pathname.startsWith("/Admin");
@@ -76,7 +76,9 @@ function App() {
           setClose,
           cart,
           setCart,
-          removeItem
+          removeItem,
+          displayname,
+          setDisplayname
         }}
       >
         { !HeadFoot && <Header />}
@@ -105,6 +107,7 @@ function App() {
       <Route path="/Admin/Products/Appliances" element={<Aappliances/>} />
       <Route path="/Admin/Productedit" element={<ProductEditPage/>} />
       <Route path="/Admin/ProductAddPage" element={<ProductAddPage/>} />
+      <Route path="/Admin/ProductEdit/:id" element={<ProductEditPage/>} />
       {/* routennte ullil wrap cheyyaane so parent-pathname + child path name */}
     
     </Route>
