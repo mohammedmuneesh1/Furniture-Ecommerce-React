@@ -73,7 +73,12 @@ export const UserData=[{
     name:"prajeesh",
     password:"prajeesh123",
     email:"prajeesh@gmail.com",
-    type:"user"
+    type:"user",
+    // order:[{
+
+    // },{
+    //     // user.map(value=>value.orders.map)
+    // }]
 }
 ,
 {

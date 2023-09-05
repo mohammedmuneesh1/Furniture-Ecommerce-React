@@ -50,13 +50,13 @@ const SecondHeader = () => {
           setLstatus(!lstatus);
           setClose(!close); 
           alert("Welcome back");
+          setDisplayname(account[0].name);
         if(account[0].type==="admin"){
         
           
           navigate("/Admin")
         }
         else{
-          setDisplayname(account[0].name);
           navigate('/');
         }                 //make it short with ternary
         e.target.lemail.value="";
@@ -258,7 +258,7 @@ const searchfn=(e)=>{
                   <MDBInput
                     wrapperClass="mb-3"
                     label="Email address"
-                    id="form1"
+                    htmlFor="form1"
                     name="lemail"
                     type="email"
                     required
@@ -266,7 +266,7 @@ const searchfn=(e)=>{
                   <MDBInput
                     wrapperClass="mb-3"
                     label="Password"
-                    id="form2"
+                    htmlFor="form2"
                     name="lpass"
                     type="password"
                     required

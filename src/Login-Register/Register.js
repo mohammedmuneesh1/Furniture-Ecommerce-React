@@ -17,7 +17,6 @@ export default function Register() {
   const {close,setClose,user,setUser}=useContext(MyData);
 const navigate=useNavigate();
 const Lid = user.reduce((LatestId, value) => Math.max(LatestId, value.id), 0);
-
 const userreg=(e)=>{
   e.preventDefault();
     const fname=e.target.Rfname.value.trim();
@@ -83,7 +82,7 @@ const userreg=(e)=>{
                   <MDBInput
                     wrapperClass="mb-1"
                     label="Full Name"
-                    id="form1"
+                    htmlFor="form1"
                     name="Rfname"
                     type="text"
                     required
@@ -91,7 +90,7 @@ const userreg=(e)=>{
                   <MDBInput
                     wrapperClass="mb-1"
                     label="Email address"
-                    id="form2"
+                    htmlFor="form2"
                     type="email"
                     name="Rmail"
                     required
@@ -99,14 +98,14 @@ const userreg=(e)=>{
                   <MDBInput
                     wrapperClass="mb-1"
                     label="Password"
-                    id="form3"
+                    htmlFor="form3"
                     type="password"
                     name="Rpass"
                     required
                   /> <MDBInput
                   wrapperClass="mb-1"
                   label="Confirm Password"
-                  id="form4"
+                  htmlFor="form4"
                   type="password"
                   name="Rpasschk"
                   required

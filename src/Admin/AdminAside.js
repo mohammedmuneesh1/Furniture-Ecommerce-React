@@ -20,6 +20,20 @@ export default function AdminAside() {
           DASHBOARD
         </h3>
         <ul>
+        <li>
+            <span className="material-symbols-outlined">Home</span>
+            <label
+              onClick={(e) => {
+                e.preventDefault();
+                navigate("/Admin");
+              }}
+            >
+              Home
+            </label>
+          </li>
+
+
+
           <li>
             <span className="material-symbols-outlined">person</span>
             <label
@@ -30,6 +44,10 @@ export default function AdminAside() {
             >
               Users
             </label>
+          </li>
+          <li>
+            <span className="material-symbols-outlined">attach_money</span>
+            <label> Revenue</label>
           </li>
           <li
             onClick={(e) => {
@@ -42,9 +60,12 @@ export default function AdminAside() {
             </span>
             <label>Products</label>
           </li>
-          <li>
-            <span className="material-symbols-outlined">attach_money</span>
-            <label> Revenue</label>
+          <li    onClick={(e) => {
+              e.preventDefault();
+              navigate("/Admin/ProductAddPage");
+            }}>
+            <span className="material-symbols-outlined">add_circle</span>
+            <label>Products</label>
           </li>
           <li>
             <span className="material-symbols-outlined">category</span>

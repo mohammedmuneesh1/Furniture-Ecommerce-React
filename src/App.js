@@ -22,7 +22,7 @@ import ProductPage from "./Body/ProductPage";
 import Bowl from "./Main-Component/Category Page/Bowl";
 import Mattresses from "./Main-Component/Category Page/Mattresses";
 import Lamps from "./Main-Component/Category Page/Lamps";
-import Appliances from "./Main-Component/Appliances";
+import Appliances from './Main-Component/Category Page/Appliances'
 import Plants from "./Main-Component/Category Page/Plants";
 import Cart from "./Body/Cart";
 import AdminHome from "./Admin/AdminHome";
@@ -38,8 +38,12 @@ import ALamps from "./Admin/P-TYPE/ALamps";
 import Aplants from './Admin/P-TYPE/Aplants';
 import Amattress from "./Admin/P-TYPE/Amattress";
 import Aappliances from "./Admin/P-TYPE/Aappliances";
+
+import ProductEditPage from "./Admin/ProductEditPage";
+import ProductAddPage from "./Admin/ProductAddPage";
 function App() {
   const [item, setItem] = useState(product);
+  console.log(item);
   const [user, setUser] = useState(UserData);
   const [lstatus, setLstatus] = useState(true);
   const [logname, setLogname] = useState("");
@@ -99,8 +103,8 @@ function App() {
       <Route path="/Admin/Products/Lamp" element={<ALamps/>} />
       <Route path="/Admin/Products/Mattress" element={<Amattress/>} />
       <Route path="/Admin/Products/Appliances" element={<Aappliances/>} />
-
-    
+      <Route path="/Admin/Productedit" element={<ProductEditPage/>} />
+      <Route path="/Admin/ProductAddPage" element={<ProductAddPage/>} />
       {/* routennte ullil wrap cheyyaane so parent-pathname + child path name */}
     
     </Route>

@@ -41,13 +41,13 @@ export default function Login() {
                   <MDBInput
                     wrapperClass="mb-1"
                     label="Email address"
-                    id="form1"
+                    htmlFor="form1"
                     type="email"
                   />
                   <MDBInput
                     wrapperClass="mb-1"
                     label="Password"
-                    id="form2"
+                    htmlFor="form2"
                     type="password"
                   />
                   <div className="text-center pt-1 mb-5 pb-5">

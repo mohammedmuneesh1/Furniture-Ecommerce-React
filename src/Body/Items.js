@@ -16,6 +16,7 @@ const Items = () => {
   const navigate=useNavigate();
   const {item,setItem}=useContext(MyData);
   const disP=item.slice(0,8); //to display first 8 products only
+  console.log(item);
   return (
     <>
       <MDBContainer fluid className="my-5 text-center">

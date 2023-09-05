@@ -11,7 +11,7 @@ import {
     MDBRipple,
   } from "mdb-react-ui-kit";
 import { useNavigate } from 'react-router-dom';
-import { MyData } from './MyData';
+import { MyData } from '../MyData';
 
 export default function Lamps() {
     useEffect(() => {

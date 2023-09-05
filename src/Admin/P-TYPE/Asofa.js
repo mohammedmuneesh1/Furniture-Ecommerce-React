@@ -3,7 +3,6 @@ import {MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from "mdb-react-ui-kit";
 import { MyData } from "../../Main-Component/MyData";
 export default function Asofa() {
   const { item,removeItem } = useContext(MyData);
-  console.log(Asofa);
   return (
     <div className="a-body">
       <MDBTable striped>

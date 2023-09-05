@@ -395,6 +395,7 @@ aside ul select{
     grid-template-rows:80px;
     /*CODE FOR NAV,ASIDE TO FIX*/
     position: relative;
+    overflow-y: auto;
 
 }
 /*admin head design start*/
@@ -523,3 +524,76 @@ aside ul select{
         min-height:220vh;
     }
   }
+
+
+  /*AdminBody.js start here*/
+
+  .content-box {
+    background-color: #fff;
+    padding: 25px 40px 20px 40px;
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgb(195, 195, 195, 1);
+  } 
+  
+  .content-box h2 {
+    margin-bottom: 15px;
+  }
+  
+  .content-box p {
+    margin: 0;
+  }
+@media all and(max-width:600px){
+    
+  .content-box {
+    background-color: #fff;
+    padding: 25px 35px 15px 35px !important;
+    width: 200px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 2px 4px rgb(195, 195, 195, 1);
+  } 
+
+}
+  /*AdminBody.js start here*/
+  tr:hover{
+    background:lightgoldenrodyellow;
+  }
+
+
+  /*producaddpage.js start here*/
+  .pap{
+    width:90%;
+    background:whitesmoke;
+    margin:0 auto;
+
+    
+  }
+  .input-container {
+   position: relative;
+    margin:20px auto;
+    
+
+  }
+
+  .input-container input {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+
+  .input-container label {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    transition: transform 0.2s, font-size 0.2s;
+    pointer-events: none;
+    color: #333;
+  }
+
+  .input-container input:focus + label {
+    transform: translateY(-20px);
+    font-size: 12px;
+  }
+  /*producaddpage.js end here*/
