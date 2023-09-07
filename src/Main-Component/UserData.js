@@ -158,8 +158,8 @@ export const UserData=[{
 {
     id:11,
     name:"jassim",
-    password:"ajmal123",
-    email:"ajmalfavas@gmail.com",
+    password:"jassim123",
+    email:"jassim@gmail.com",
     order:[],
     type:"user"
 }
