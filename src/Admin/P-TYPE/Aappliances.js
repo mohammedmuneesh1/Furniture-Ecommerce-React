@@ -17,7 +17,7 @@ export default function Aappliances() {
           </tr>
         </MDBTableHead>
         <MDBTableBody>
-          {item.filter(value=>value.category =="Appliances")
+          {item.filter(value=>value.category === "Appliances")
           .map((value,index)=>{
             const IndexOfCategoryItem = item.indexOf(value);
             return(
@@ -29,6 +29,7 @@ export default function Aappliances() {
                   src={value.src}
                   style={{ width: "45px", height: "45px" }}
                   className="rounded-circle"
+                  alt="applianceImage"
                 />
               </td>
               <td>{value.name.slice(0, 40)}</td>

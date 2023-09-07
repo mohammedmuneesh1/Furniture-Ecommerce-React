@@ -4,7 +4,6 @@ import {
   MDBTableHead,
   MDBTableBody,
   MDBIcon,
-  MDBBtn
 } from "mdb-react-ui-kit";
 import { MyData } from "../Main-Component/MyData";
 export default function AdminBody() {
@@ -69,6 +68,7 @@ export default function AdminBody() {
                 src={value.src}
                 style={{ width: "45px", height: "45px" }}
                 className="rounded-circle"
+                alt="roundimage"
               />
             </td>
             <td>{value.price}</td>
@@ -123,7 +123,7 @@ export default function AdminBody() {
       < h3 className="text-center fontfamily-monospace mt-5 mb-5">Social Media</h3>
       <div className="d-flex justify-content-center align-items-center flex-wrap gap-5  mt-4 mb-5" >
       <div style={{ width: "240px", borderRadius: "15px", boxShadow: "0 2px 4px rgba(195, 195, 195, 1)", display: "flex", alignItems: "center", flexDirection: "column" }}>
-  <img style={{ width: "100%", height: "auto",borderTopLeftRadius:"15px",borderTopRightRadius:"15px" }} src="https://wallpaperaccess.com/full/2547011.jpg" alt="facebook-Image" />
+  <img style={{ width: "100%", height: "auto",borderTopLeftRadius:"15px",borderTopRightRadius:"15px" }} src="https://wallpaperaccess.com/full/2547011.jpg" alt="facebookImage" />
  
  
   <div className="d-flex justify-content-between align-items-center gap-5 ">     
@@ -139,7 +139,7 @@ export default function AdminBody() {
          
         </div>
         <div style={{ width: "240px",  borderRadius: "15px", boxShadow: "0 2px 4px rgba(195, 195, 195, 1)", display: "flex", alignItems: "center", flexDirection: "column" }}>
-  <img style={{ width: "100%", height: "auto",borderTopLeftRadius:"15px",borderTopRightRadius:"15px" }} src="https://wallpaperaccess.com/full/4719129.png" alt="twitter-Image" />
+  <img style={{ width: "100%", height: "auto",borderTopLeftRadius:"15px",borderTopRightRadius:"15px" }} src="https://wallpaperaccess.com/full/4719129.png" alt="twitterImage" />
   <div className="d-flex justify-content-between align-items-center gap-5 ">
     <div className="text-center me-4 mt-3">
       <h6>35K</h6>
@@ -153,7 +153,7 @@ export default function AdminBody() {
          
         </div>
         <div style={{ width: "240px",  borderRadius: "15px", boxShadow: "0 2px 4px rgba(195, 195, 195, 1)", display: "flex", alignItems: "center", flexDirection: "column" }}>
-  <img style={{ width: "100%", height: "auto",borderTopLeftRadius:"15px",borderTopRightRadius:"15px" }} src="https://wallpaperaccess.com/full/274084.png" alt="Instagram-Image" />
+  <img style={{ width: "100%", height: "auto",borderTopLeftRadius:"15px",borderTopRightRadius:"15px" }} src="https://wallpaperaccess.com/full/274084.png" alt="InstagramImage" />
   <div className="d-flex justify-content-between align-items-center gap-5 gap-5">
     <div className="text-center me-4 mt-3">
       <h6>35K</h6>
@@ -167,7 +167,7 @@ export default function AdminBody() {
          
         </div>
         <div style={{ width: "240px", borderRadius: "15px", boxShadow: "0 2px 4px rgba(195, 195, 195, 1)", display: "flex", alignItems: "center", flexDirection: "column" }}>
-  <img style={{ width: "100%", height: "auto",borderTopLeftRadius:"15px",borderTopRightRadius:"15px" }} src="https://wallpaperaccess.com/full/2484197.png" alt="Linkedin-Image" />
+  <img style={{ width: "100%", height: "auto",borderTopLeftRadius:"15px",borderTopRightRadius:"15px" }} src="https://wallpaperaccess.com/full/2484197.png" alt="LinkedinImage" />
   <div className="d-flex justify-content-between align-items-center gap-5 gap-5">
     <div className="text-center me-4 mt-3">
       <h6>758</h6>
@@ -181,31 +181,7 @@ export default function AdminBody() {
          
         </div>
       </div>
-      {/* 
-    <MDBTable striped >
-      <MDBTableHead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </MDBTableHead>
-      <MDBTableBody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-      </MDBTableBody>
-    </MDBTable> */}
+
 
 
     </div>

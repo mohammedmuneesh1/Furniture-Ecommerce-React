@@ -6,8 +6,6 @@ import {
     MDBCard,
     MDBCardBody,
     MDBCardImage,
-    MDBIcon,
-    MDBBtn,
     MDBRipple,
   } from "mdb-react-ui-kit";
   import { MyData } from '../MyData';
@@ -18,7 +16,7 @@ export default function Mattresses() {
         window.scrollTo(0, 0);
          }, []);
     const navigate=useNavigate();
-      const {item,setItem}=useContext(MyData);
+      const {item}=useContext(MyData);
        const Psofa=item.filter((value)=>value.category ==="Mattress");
   return (
     <>
@@ -65,14 +63,14 @@ export default function Mattresses() {
             </span>
         </MDBRipple>
         <MDBCardBody className="custom-card-body p-1 p-md-3 p-lg-4">
-          <a  className="text-reset">
+          <span  className="text-reset">
             <h5 className="card-title mb-2 mb-md-3 mb-lg-3 h5-responsive">
             {value.name}
             </h5>
-          </a>
-          <a  className="text-reset">
+          </span>
+          <span  className="text-reset">
             <p className="mb-2 mb-lg-4 text-muted card-category " >{value.category}</p>
-          </a>
+          </span>
           <h6 className="mb-2 card-price"><b>₹</b>{value.price}</h6>
         </MDBCardBody>
       </MDBCard>

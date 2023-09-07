@@ -4,7 +4,7 @@ import { MyData } from "../Main-Component/MyData";
 import { useNavigate } from "react-router-dom";
 
 export default function AallProduct() {
-  const { item,setItem ,removeItem} = useContext(MyData);
+  const { item,removeItem} = useContext(MyData);
   const navigate=useNavigate();
   
  
@@ -31,6 +31,7 @@ export default function AallProduct() {
                   src={value.src}
                   style={{ width: "45px", height: "45px" }}
                   className="rounded-circle"
+                  alt="productroundcircleImage"
                 />
               </td>
               <td>{value.name.slice(0, 30)}</td>

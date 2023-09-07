@@ -9,12 +9,11 @@ import {
 import "./Register.css";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import Body from "../Body/Body";
 import { MyData } from "../Main-Component/MyData";
 
 export default function Register() {
-  const {close,setClose,user,setUser}=useContext(MyData);
+  const {setClose,user,setUser}=useContext(MyData);
 const navigate=useNavigate();
 const Lid = user.reduce((LatestId, value) => Math.max(LatestId, value.id), 0);
 const userreg=(e)=>{
@@ -43,7 +42,7 @@ const userreg=(e)=>{
         };
         
         setUser([...user, newUser]);
-        console.log(user);
+  
         alert("welcome back")
         navigate("/")
         setClose(true);

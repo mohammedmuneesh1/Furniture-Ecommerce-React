@@ -18,7 +18,7 @@ export default function Aplants() {
         </tr>
       </MDBTableHead>
       <MDBTableBody>
-      {item.filter(value=>value.category =="Plant")
+      {item.filter(value=>value.category === "Plant")
           .map((value,index)=>{
             const IndexOfCategoryItem = item.indexOf(value);
             return(
@@ -30,6 +30,7 @@ export default function Aplants() {
                   src={value.src}
                   style={{ width: "45px", height: "45px" }}
                   className="rounded-circle"
+                  alt="plantImage"
                 />
               </td>
               <td>{value.name.slice(0, 40)}</td>

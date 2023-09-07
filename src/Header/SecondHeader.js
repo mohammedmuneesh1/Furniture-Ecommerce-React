@@ -1,7 +1,7 @@
 import '../Login-Register/Login-Register.css'
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { MDBBadge,MDBIcon } from 'mdb-react-ui-kit';
+import { MDBBadge} from 'mdb-react-ui-kit';
 
 import {
   MDBBtn,
@@ -11,13 +11,12 @@ import {
   MDBInput,
 } from "mdb-react-ui-kit";
 import { MyData } from '../Main-Component/MyData';
-import { NavItem } from 'react-bootstrap';
 
 const SecondHeader = () => {
 
 
   const navigate=useNavigate();
-  const {user,lstatus,setLstatus,logname,setLogname,close,setClose,item,cart,displayname,setDisplayname} =useContext(MyData);
+  const {user,lstatus,setLstatus,setLogname,close,setClose,item,cart,displayname,setDisplayname} =useContext(MyData);
 //LSTATUS TRUE BY DEFAULT;
 //CLOSE USESTATE FALSE BY DEFAULT;
   const [state,setState]=useState(false);
@@ -275,14 +274,14 @@ const searchfn=(e)=>{
                     <MDBBtn type='submit' className=" w-100 gradient-custom-2 sign-in">
                       Sign in
                     </MDBBtn>
-                    <a className="text-muted" style={{cursor:"pointer"}}>
+                    <a href="https://www.google.com/" className="text-muted" style={{cursor:"pointer"}}>
                       Forgot password?
                     </a>
                     <p className="mb-0"  style={{cursor:"default"}}>
                       Don't have an account?&nbsp;
-                      <a className="text-muted" style={{cursor:"pointer"}}  onClick={()=>navigate("/Registration")}>
+                      <span className="text-muted" style={{cursor:"pointer"}}  onClick={()=>navigate("/Registration")}>
                         Register Now
-                      </a>
+                      </span>
                     </p>
                   </div>
                 </div>

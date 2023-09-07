@@ -13,9 +13,9 @@ export const UserData=[{
     email:"saleek@gmail.com",
     order:[{
         Oid:1,
-        Opname:"banana",
+        Opname:"Brinley Beige Cotton Shade Floor Lamp With Beige Solid Wood Base",
         Oqty:1,
-        Opprice:5000 , 
+        Opprice:3800 , 
     },
     {
         Oid:2,
@@ -41,7 +41,7 @@ export const UserData=[{
     password:"ashiqueali123",
     email:"ashiqueali@gmail.com",
     order:[{
-        Oid:1,
+        Oid:3,
         Opname:"orange",
         Oqty:1,
         Opprice:5100  
@@ -55,7 +55,7 @@ export const UserData=[{
     password:"rasiya123",
     email:"rasiya@gmail.com",
     order:[{
-        Oid:1,
+        Oid:4,
         Opname:"orange",
         Oqty:1,
         Opprice:5100  
@@ -69,7 +69,7 @@ export const UserData=[{
     password:"febin123",
     email:"febin@gmail.com",
     order:[{
-        Oid:1,
+        Oid:5,
         Opname:"orange",
         Oqty:1,
         Opprice:5100  
@@ -82,7 +82,7 @@ export const UserData=[{
     password:"abid123",
     email:"abid@gmail.com",
     order:[{
-        Oid:1,
+        Oid:6,
         Opname:"orange",
         Oqty:1,
         Opprice:5100  
@@ -96,7 +96,7 @@ export const UserData=[{
     password:"salman123",
     email:"salman@gmail.com",
     order:[{
-        Oid:1,
+        Oid:7,
         Opname:"orange",
         Oqty:1,
         Opprice:5100  
@@ -110,7 +110,7 @@ export const UserData=[{
     password:"ameen123",
     email:"ameen@gmail.com",
     order:[{
-        Oid:1,
+        Oid:8,
         Opname:"orange",
         Oqty:1,
         Opprice:5100  
@@ -124,17 +124,13 @@ export const UserData=[{
     password:"prajeesh123",
     email:"prajeesh@gmail.com",
     order:[{
-        Oid:1,
+        Oid:9,
         Opname:"orange",
         Oqty:1,
         Opprice:5100  
     }],
     type:"user",
-    // order:[{
 
-    // },{
-    //     // user.map(value=>value.orders.map)
-    // }]
 }
 ,
 {
@@ -143,7 +139,7 @@ export const UserData=[{
     password:"binshad123",
     email:"binshad@email.com",
     order:[{
-        Oid:1,
+        Oid:10,
         Opname:"orange",
         Oqty:1,
         Opprice:5100  

@@ -5,7 +5,6 @@ import {MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from "mdb-react-ui-kit";
 import { MyData } from "../../Main-Component/MyData";
 export default function  Amattress() {
   const { item,removeItem } = useContext(MyData);
-  const product = item.filter((value) => value.category ==="Mattress" );
   return (
     <div className="a-body">
       <MDBTable striped>
@@ -20,7 +19,7 @@ export default function  Amattress() {
           </tr>
         </MDBTableHead>
         <MDBTableBody>
-        {item.filter(value=>value.category =="Mattress")
+        {item.filter(value=>value.category === "Mattress")
           .map((value,index)=>{
             const IndexOfCategoryItem = item.indexOf(value);
             return(
@@ -32,6 +31,7 @@ export default function  Amattress() {
                   src={value.src}
                   style={{ width: "45px", height: "45px" }}
                   className="rounded-circle"
+                  alt="mattressImage"
                 />
               </td>
               <td>{value.name.slice(0, 40)}</td>

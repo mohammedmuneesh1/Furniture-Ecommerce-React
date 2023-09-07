@@ -12,14 +12,14 @@ const Cards =()=>{
     return (
         <div className="cards-main">
             <p>We accept:</p>
-            <img src={visa} alt=" visa card image"/>
-            <img src={AE} alt="American Express image"/>
-            <img src={MC} alt="Master Card image"/>
-            <img src={DC} alt="diners club image"/>
-            <img src={Maestro} alt="Maestro image"/>
-            <img src={NB} alt="Net Banking image"/>
-            <img src={rupay} alt="rupay image"/>
-            <img src={wallet} alt="American Express image"/>
+            <img src={visa} alt=" visa card "/>
+            <img src={AE} alt="American Express "/>
+            <img src={MC} alt="Master Card "/>
+            <img src={DC} alt="diners club "/>
+            <img src={Maestro} alt="Maestro "/>
+            <img src={NB} alt="Net Banking "/>
+            <img src={rupay} alt="rupay "/>
+            <img src={wallet} alt="American Express"/>
             <hr/>
 
         </div>

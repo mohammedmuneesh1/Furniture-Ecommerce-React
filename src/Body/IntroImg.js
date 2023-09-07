@@ -2,7 +2,6 @@ import FS from "../Assets/body-Assets/freedom-sales.jpg";
 import SS from "../Assets/body-Assets/star-sale.png";
 
 /*images of imgp1-c1 start here*/
-import monsoon from '../Assets/body-Assets/balcony.jpg'
 import balcony from '../Assets/body-Assets/balcony.jpg'
 import raincomfort from '../Assets/body-Assets/raincomfort.avif'
 
@@ -42,7 +41,7 @@ const IntroImg = () => {
   return (
     <>
       <div className="img-p1">
-        <img src={FS} alt="Freedom Sale image" />
+        <img src={FS} alt="Freedom Sale" />
         <br />
         </div>
 
@@ -51,17 +50,17 @@ const IntroImg = () => {
       <div className="imgp1c1">
         <div className="imgp1-c1">
         
-          <img src={balcony} alt="carven lounge chair image" />
+          <img src={balcony} alt="carven lounge chair" />
         
         
-          <img src={balcony} alt="Diner 6 seater dining set image" />
+          <img src={balcony} alt="Diner 6 seater dining set" />
         
         
-          <img src={raincomfort} alt="jasper storage bed image" />
+          <img src={raincomfort} alt="jasper storage bed" />
         
         </div>
         <div className="imgp1c1-signup">
-        <img src={signup} alt="signup image" />
+        <img src={signup} alt="signup " />
         </div>
         
         </div>
@@ -75,7 +74,7 @@ const IntroImg = () => {
 
 
         <div className="img-p1">
-        <img src={SS} alt="star sale image" />
+        <img src={SS} alt="star sale" />
         </div>
 
 
@@ -87,80 +86,80 @@ const IntroImg = () => {
 
       <div className="img-p2">
         
-          <img src={p2A} alt="carven lounge chair image" />
+          <img src={p2A} alt="carven lounge chair" />
         
         
-          <img src={p2B} alt="Diner 6 seater dining set image" />
+          <img src={p2B} alt="Diner 6 seater dining set" />
         
 
         
-          <img src={p2C} alt="jasper storage bed image" />
+          <img src={p2C} alt="jasper storage bed" />
         
         <br />
 
         
-          <img src={p2D} alt="declove coffee table image" />
+          <img src={p2D} alt="declove coffee table" />
         
 
         
-          <img src={p2E} alt="hilton 2 door image " />
+          <img src={p2E} alt="hilton 2 door" />
         
 
         
-          <img src={p2F} alt="Darwin fabric sofa image" />
+          <img src={p2F} alt="Darwin fabric sofa" />
         
       </div>
       <div className="img-p3">
         
-          <img src={p3A} alt="ICIC bank offer image" />
+          <img src={p3A} alt="ICIC bank offer" />
         
         <br />
         
-          <img src={p3B} alt="Darwin fabric sofa image" />
+          <img src={p3B} alt="Darwin fabric sofa" />
         
         <br />
       </div>
       
       <div className="img-p4">
        
-          <img src={p4A} alt="carven lounge chair image" />
+          <img src={p4A} alt="carven lounge chair" />
         
 
 
         <span>
-          <img src={p4B}  onClick={()=>navigate("/sofa")} alt="Diner 6 seater dining set image"  />
+          <img src={p4B}  onClick={()=>navigate("/sofa")} alt="Diner 6 seater dining set"  />
         </span>
 
 
 
         
-          <img src={p4C} alt="jasper storage bed image" />
+          <img src={p4C} alt="jasper storage bed " />
         
         <br />
 
         
-          <img src={p4D} alt="declove coffee table image" />
+          <img src={p4D} alt="declove coffee table " />
         
 
         
-          <img src={p4E} alt="hilton 2 door image " />
+          <img src={p4E} alt="hilton 2 door " />
         
 
         
-          <img src={p4F} alt="Darwin fabric sofa image" />
+          <img src={p4F} alt="Darwin fabric sofa" />
         
         <br />
 
         
-          <img src={p4G} alt="declove coffee table image" />
+          <img src={p4G} alt="declove coffee table" />
         
 
         
-          <img src={p4H} alt="hilton 2 door image " />
+          <img src={p4H} alt="hilton 2 door  " />
         
 
         
-          <img src={p4I} alt="Darwin fabric sofa image" />
+          <img src={p4I} alt="Darwin fabric sofa " />
         
       </div>
     </>

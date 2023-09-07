@@ -12,7 +12,7 @@ const Offer = () => {
     <div className="offer-head">
       <span>
         Extra 7.5% off ICICI Bank Cards | Offer Extended |{" "}
-        <a href="#">Hurry & shop now! </a>
+        <a href="https://www.pepperfry.com/">Hurry & shop now! </a>
       </span>
       <span className="material-symbols-outlined close" onClick={close}>
         close

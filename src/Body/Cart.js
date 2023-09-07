@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import {
   MDBBtn,
   MDBCard,
@@ -11,107 +11,88 @@ import {
   MDBRow,
   MDBTypography,
 } from "mdb-react-ui-kit";
-import { MyData } from "../Main-Component/MyData";
-import { Navigate, useNavigate } from "react-router-dom";
+import { MyData } from "../Main-Component/MyData"; // Importing context for data sharing
+import { useNavigate } from "react-router-dom"; // Importing navigation hook
+import { v4 as uuidv4 } from 'uuid'; // Importing UUID library for generating unique identifiers
 
 export default function Cart() {
-  const { cart, setCart,user,setUser,displayname,setDisplayname } = useContext(MyData);
-  const navigate=useNavigate();
-  
+  // Accessing data from the context
+  const { cart, setCart, user, setUser, displayname } = useContext(MyData);
+
+  // Initializing the navigation hook
+  const navigate = useNavigate();
+ 
+  // Scroll to the top of the page when the component mounts
   useEffect(() => {
-    
     window.scrollTo(0, 0);
   }, []);
 
-
+  // Function to increase quantity of a product in the cart
   const qtyplus = (itemId) => {
     const cartPlus = cart.map((value) => {
-      // console.log(value);
       if (value.id === parseInt(itemId)) {
-        return { ...value, quantity: value.quantity + 1 }; //value = {id , cateo ,quantity ,quantity:}
+        return { ...value, quantity: value.quantity + 1 };
       }
       return value;
     });
     setCart(cartPlus);
   };
 
-
+  // Function to decrease quantity of a product in the cart
   const qtyminus = (itemId) => {
     const cartMinus = cart.map((value) => {
       if (value.id === parseInt(itemId) && value.quantity > 1) {
-        return { ...value,quantity: value.quantity - 1 };
+        return { ...value, quantity: value.quantity - 1 };
       }
       return value;
     });
     setCart(cartMinus);
   };
 
+  // Calculate the total price of items in the cart
   const totalPrice = cart.length > 0
-  ? cart.reduce((total, value) => {
-     
-      return total + value.price * value.quantity;
-    }, 0)
-  : 0;
+    ? cart.reduce((total, value) => {
+        return total + value.price * value.quantity;
+      }, 0)
+    : 0;
 
-  const removeProductcart=(itemId)=>{
-    const productafterremove=cart.filter(value=>value.id !== itemId);
+  // Function to remove a product from the cart
+  const removeProductcart = (itemId) => {
+    const productafterremove = cart.filter(value => value.id !== itemId);
     setCart(productafterremove);
-
   }
 
+  // Function to update orders and user profiles when placing an order
+  
   const orderupdate = (e) => {
     e.preventDefault();
   
     if (cart.length !== 0) {
       const Orderdetails = cart.map((value, index) => ({
-        Oid: 11, // Adding 1 to create a unique identifier for each order
+        Oid: uuidv4(), // Generate a unique order ID
         Opname: value.name,
         Oqty: value.quantity,
         Opprice: value.price,
       }));
- console.log(Orderdetails);
-  
-     const Profilechk=user.map((value)=>{
-      console.log(value.name === displayname)
-      console.log(value.name)
-      if(value.name === displayname){
-        return {
-          ...value,
-          order: [...value.order, ...Orderdetails],
-        };
-      }
-      return value;
-     })
-     console.log(Profilechk);
-     setUser(Profilechk);
-     alert("Order placed Successfully");
-     setCart([]);
-      
-    }
+    
+      const Profilechk = user.map((value) => {
+        if (value.name === displayname) {
+          return {
+            ...value,
+            order: [...value.order, ...Orderdetails],
+          };
+        }
+        return value;
+      });
 
-
-
-     else {
-      alert("cart is empty")
+      setUser(Profilechk);
+      alert("Order placed Successfully");
+      setCart([]);
+    } else {
+      alert("Cart is empty");
     }
   };
 
-
-
-
-
-
-  // const increment=()=>{
-  //     setCount(count+1);
-  // }
-  // const decrement=()=>{
-  //     count>1?setCount(count-1):setCount(1);
-
-  // }
-
-  // const itempricecomma = cart.length > 0 ? cart[0].price : 0;
-  // const itemprice=parseFloat(itempricecomma.replace(/,/g,""));
-  // const TotalPrice=count*itemprice;
 
   return (
     <>
@@ -134,7 +115,7 @@ export default function Cart() {
                       </MDBTypography>
 
                       {cart.map((item) => (
-                        <div className="d-flex align-items-center mb-5">
+                        <div  key={item.id} className="d-flex align-items-center mb-5">
                           <div className="flex-shrink-0">
                             <MDBCardImage
                               src={item.src}
@@ -145,9 +126,9 @@ export default function Cart() {
                           </div>
 
                           <div className="flex-grow-1 ms-3">
-                            <a  className="float-end text-black">
+                            <span  className="float-end text-black">
                               <MDBIcon fas icon="times" onClick={()=>removeProductcart(item.id)} />
-                            </a>
+                            </span>
                             <MDBTypography tag="h5" className="text-primary">
                               {item.name}
                             </MDBTypography>
@@ -283,10 +264,10 @@ export default function Cart() {
                           className="fw-bold mb-5"
                           style={{ position: "absolute", bottom: "0" }}
                         >
-                          <a onClick={()=>navigate("/")}>
+                          <span onClick={()=>navigate("/")}>
                             <MDBIcon fas icon="angle-left me-2" />
                             Back to shopping
-                          </a>
+                          </span>
                         </MDBTypography>
                       </form>
                     </MDBCol>

@@ -5,8 +5,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCardImage,
-  MDBIcon,
-  MDBBtn,
   MDBRipple,
 } from "mdb-react-ui-kit";
 import { MyData } from "../Main-Component/MyData";
@@ -14,9 +12,8 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 const Items = () => {
   const navigate=useNavigate();
-  const {item,setItem}=useContext(MyData);
+  const {item}=useContext(MyData);
   const disP=item.slice(0,8); //to display first 8 products only
-  console.log(item);
 
 
   const handlePrice = (price) => {
@@ -70,14 +67,14 @@ const Items = () => {
             </span>
         </MDBRipple>
         <MDBCardBody className="custom-card-body p-1 p-md-3 p-lg-4">
-          <a  className="text-reset">
+          <span  className="text-reset">
             <h5 className="card-title mb-2 mb-md-3 mb-lg-3 h5-responsive">
             {value.name}
             </h5>
-          </a>
-          <a className="text-reset">
+          </span>
+          <span className="text-reset">
             <p className="mb-2 mb-lg-4 text-muted card-category " >{value.category}</p>
-          </a>
+          </span>
           <h6 className="mb-2 card-price">{handlePrice(value.price)}</h6>
         </MDBCardBody>
       </MDBCard>

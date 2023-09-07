@@ -19,7 +19,6 @@ export default function ProductEditPage() {
       price:e.target.Pprice.value
     }
     setItem(UpdatedItem);
-    console.log(item);
 
 
   }

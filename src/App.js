@@ -1,19 +1,14 @@
 import "./App.css";
 import { MyData } from "./Main-Component/MyData";
 import Header from "./Header/Header";
-import Login from "./Login-Register/Login";
 import Register from "./Login-Register/Register";
-import Navbar from "./Header/Trail";
-import Body from "./Body/Body";
 import Footer from "./Footer/Footer";
-import SocialMediaCarousel from "./Body/SocialMediaCrousel";
 import { product } from "./Main-Component/Product";
 import { UserData } from "./Main-Component/UserData";
 import Main from "../src/Main-Component/Main";
 import {
   Route,
   Routes,
-  ScrollRestoration,
   useLocation,
 } from "react-router-dom";
 import { useState } from "react";
@@ -27,8 +22,6 @@ import Plants from "./Main-Component/Category Page/Plants";
 import Cart from "./Body/Cart";
 import AdminHome from "./Admin/AdminHome";
 import Auser from "./Admin/Auser";
-import AdminAside from "./Admin/AdminAside";
-import AdminHead from "./Admin/AdminHead";
 import AallProduct from "./Admin/AallProduct";
 
 // P-TYPE importing 
@@ -41,9 +34,9 @@ import Aappliances from "./Admin/P-TYPE/Aappliances";
 
 import ProductEditPage from "./Admin/ProductEditPage";
 import ProductAddPage from "./Admin/ProductAddPage";
+import OrderDetails from "./Admin/OrderDetails";
 function App() {
   const [item, setItem] = useState(product);
-  console.log(item);
   const [user, setUser] = useState(UserData);
   const [lstatus, setLstatus] = useState(true);
   const [logname, setLogname] = useState("");
@@ -84,7 +77,6 @@ function App() {
         { !HeadFoot && <Header />}
         <Routes>
   <Route path="/" element={<Main />} />
-  <Route path="/Login" element={<Login />} />
   <Route path="/Registration" element={<Register />} />
   <Route path="/sofa" element={<Sofa />} />
   <Route path="/Bowl" element={<Bowl />} />
@@ -108,6 +100,7 @@ function App() {
       <Route path="/Admin/Productedit" element={<ProductEditPage/>} />
       <Route path="/Admin/ProductAddPage" element={<ProductAddPage/>} />
       <Route path="/Admin/ProductEdit/:id" element={<ProductEditPage/>} />
+      <Route path="/Admin/OrderDetails/:id" element={<OrderDetails/>} />
       {/* routennte ullil wrap cheyyaane so parent-pathname + child path name */}
     
     </Route>

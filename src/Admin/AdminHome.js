@@ -1,20 +1,13 @@
 import React from "react";
-import { Outlet, useNavigate } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 import "./Admin.css";
-import Auser from "./Auser";
-import {
-  MDBDropdown,
-  MDBDropdownMenu,
-  MDBDropdownToggle,
-  MDBDropdownItem,
-} from "mdb-react-ui-kit";
 
-import { useLoaderData, useLocation } from "react-router-dom";
+
+
 import AdminHead from "./AdminHead";
 import AdminAside from "./AdminAside";
 import AdminBody from "./AdminBody";
-import AallProduct from "./AallProduct";
 export default function AdminHome() {
   return (
     <>

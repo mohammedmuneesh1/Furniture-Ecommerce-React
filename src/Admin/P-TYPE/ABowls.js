@@ -18,7 +18,7 @@ export default function ABowls() {
         </tr>
       </MDBTableHead>
       <MDBTableBody>
-      {item.filter(value=>value.category =="Bowl")
+      {item.filter(value=>value.category === "Bowl")
           .map((value,index)=>{
             const IndexOfCategoryItem = item.indexOf(value);
             return(
@@ -30,6 +30,7 @@ export default function ABowls() {
                   src={value.src}
                   style={{ width: "45px", height: "45px" }}
                   className="rounded-circle"
+                  alt="BowlImage"
                 />
               </td>
               <td>{value.name.slice(0, 40)}</td>

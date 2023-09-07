@@ -19,7 +19,7 @@ export default function ALamps() {
           </tr>
         </MDBTableHead>
         <MDBTableBody>
-        {item.filter(value=>value.category =="Lamps")
+        {item.filter(value=>value.category === "Lamps")
           .map((value,index)=>{
             const IndexOfCategoryItem = item.indexOf(value);
             return(
@@ -31,6 +31,7 @@ export default function ALamps() {
                   src={value.src}
                   style={{ width: "45px", height: "45px" }}
                   className="rounded-circle"
+                  alt="LampsImage"
                 />
               </td>
               <td>{value.name.slice(0, 40)}</td>

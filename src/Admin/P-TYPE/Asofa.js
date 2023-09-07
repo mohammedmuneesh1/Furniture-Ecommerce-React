@@ -17,7 +17,7 @@ export default function Asofa() {
           </tr>
         </MDBTableHead>
         <MDBTableBody>
-        {item.filter(value=>value.category =="Sofa")
+        {item.filter(value=>value.category ==="Sofa")
           .map((value,index)=>{
             const IndexOfCategoryItem = item.indexOf(value);
             return(
@@ -29,6 +29,7 @@ export default function Asofa() {
                   src={value.src}
                   style={{ width: "45px", height: "45px" }}
                   className="rounded-circle"
+                  alt="sofaImage"
                 />
               </td>
               <td>{value.name.slice(0, 40)}</td>

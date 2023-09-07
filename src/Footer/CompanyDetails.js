@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MDBInput, MDBBtn } from 'mdb-react-ui-kit';
+import { MDBBtn } from 'mdb-react-ui-kit';
 import gp from '../Assets/footer-Assests/google-play.png';
 import ps from '../Assets/footer-Assests/playstore.webp';
 
@@ -42,102 +42,104 @@ const CompanyDetails = () => {
          < div className="CD-d">
                 <h2>Popular Categories</h2>
                 <p style={{textAlign:"justify"}}>
-                <a href="#">Sectional Sofas, </a>
-<a href="#"> Sofa Sets,</a>
-<a href="#">Queen Size Beds, </a>
-<a href="#">King Size Beds, </a>
-<a href="#">Coffee Tables, </a>
-<a href="#">Dining Sets, </a>
-<a href="#"> Recliners,</a>
-<a href="#">Sofa Cum Beds, </a>
-<a href="#">Rocking Chairs, </a>
-<a href="#"> Cabinets & Sideboards,</a>
-<a href="#">Book Shelves, </a>
-<a href="#">TV & Media Units, </a>
-<a href="#"> Wardrobes,</a>
-<a href="#">Outdoor Furniture, </a>
-<a href="#">Bar Cabinets, </a>
-<a href="#">Wall Shelves, </a>
-<a href="#"> Photo Frames,</a>
-<a href="#">Bed Sheets, </a>
-<a href="#">Table Linen, </a>
-<a href="#">Study Tables, </a>
-<a href="#">Office Furniture, </a>
-<a href="#">Dining Tables, </a>
-<a href="#">Carpets, </a>
-<a href="#">Wall Art </a>
+                <span>Sectional Sofas, </span>
+                <span>Sofa Sets,</span>
+<span>Queen Size Beds, </span>
+<span>King Size Beds, </span>
+<span>Coffee Tables, </span>
+<span>Dining Sets, </span>
+<span>Recliners,</span>
+<span>Sofa Cum Beds, </span>
+<span>Rocking Chairs, </span>
+<span>Cabinets & Sideboards,</span>
+<span>Book Shelves, </span>
+<span>TV & Media Units, </span>
+<span>Wardrobes,</span>
+<span>Outdoor Furniture, </span>
+<span>Bar Cabinets, </span>
+<span>Wall Shelves, </span>
+<span>Photo Frames,</span>
+<span>Bed Sheets, </span>
+<span>Table Linen, </span>
+<span>Study Tables, </span>
+<span>Office Furniture, </span>
+<span>Dining Tables, </span>
+<span>Carpets, </span>
+<span>Wall Art </span>
+
                 </p>
               </div>
               < div className="CD-d">
                 <h2>Popular Brands</h2>
                 <p style={{textAlign:"justify"}}>
-                <a href="#">Mintwud, </a>
-<a href="#">Woodsworth, </a>
-<a href="#">CasaCraft, </a>
-<a href="#">Amberville, </a>
-<a href="#">Mudramark, </a>
-<a href="#">Bohemiana, </a>
-<a href="#">Clouddio, </a>
-<a href="#">Spacewood, </a>
-<a href="#">A Globia Creations, </a>
-<a href="#">Febonic, </a>
-<a href="#">@home, </a>
-<a href="#">Durian, </a>
-<a href="#">Evok, </a>
-<a href="#">Hometown,</a>
-<a href="#">Nilkamal, </a>
-<a href="#">Crystal Furnitech, </a>
-<a href="#">Bluewud, </a>
-<a href="#">Duroflex,</a>
-<a href="#">Sleepyhead,</a>
-<a href="#">Green Soul,</a>
-<a href="#">Orange Tree</a>
+
+                <span>Mintwud, </span>
+<span>Woodsworth, </span>
+<span>CasaCraft, </span>
+<span>Amberville, </span>
+<span>Mudramark, </span>
+<span>Bohemiana, </span>
+<span>Clouddio, </span>
+<span>Spacewood, </span>
+<span>A Globia Creations, </span>
+<span>Febonic, </span>
+<span>@home, </span>
+<span>Durian, </span>
+<span>Evok, </span>
+<span>Hometown, </span>
+<span>Nilkamal, </span>
+<span>Crystal Furnitech, </span>
+<span>Bluewud, </span>
+<span>Duroflex, </span>
+<span>Sleepyhead, </span>
+<span>Green Soul, </span>
+<span>Orange Tree</span>
 
                 </p>
               </div>
               < div className="CD-d">
                 <h2>Popular cities</h2>
                 <p style={{textAlign:"justify"}}>
-                <a href="#">Bengaluru, </a>
-<a href="#">Mumbai, </a>
-<a href="#">Navi Mumbai, </a>
-<a href="#">Delhi, </a>
-<a href="#">Hyderabad, </a>
-<a href="#">Pune, </a>
-<a href="#">Chennai, </a>
-<a href="#">Gurgaon, </a>
-<a href="#">Kolkata, </a>
-<a href="#">Noida, </a>
-<a href="#">Goa, </a>
-<a href="#">Ghaziabad, </a>
-<a href="#">Faridabad, </a>
-<a href="#">Jaipur, </a>
-<a href="#">Lucknow, </a>
-<a href="#">Kochi, </a>
-<a href="#">Visakhapatnam, </a>
-<a href="#">Chandigarh, </a>
-<a href="#">Vadodara, </a>
-<a href="#">Nagpur, </a>
-<a href="#">Thiruvananthapuram, </a>
-<a href="#">Indore, </a>
-<a href="#">Mysore, </a>
-<a href="#">Bhopal, </a>
-<a href="#">Surat, </a>
-<a href="#">Jalandhar, </a>
-<a href="#">Patna, </a>
-<a href="#">Ludhiana, </a>
-<a href="#">Ahmedabad, </a>
-<a href="#">Nashik, </a>
-<a href="#">Madurai, </a>
-<a href="#">Kanpur, </a>
-<a href="#">Aurangabad </a>
+     <span>Bengaluru, </span>
+<span>Mumbai, </span>
+<span>Navi Mumbai, </span>
+<span>Delhi, </span>
+<span>Hyderabad, </span>
+<span>Pune, </span>
+<span>Chennai, </span>
+<span>Gurgaon, </span>
+<span>Kolkata, </span>
+<span>Noida, </span>
+<span>Goa, </span>
+<span>Ghaziabad, </span>
+<span>Faridabad, </span>
+<span>Jaipur, </span>
+<span>Lucknow, </span>
+<span>Kochi, </span>
+<span>Visakhapatnam, </span>
+<span>Chandigarh, </span>
+<span>Vadodara, </span>
+<span>Nagpur, </span>
+<span>Thiruvananthapuram, </span>
+<span>Indore, </span>
+<span>Mysore, </span>
+<span>Bhopal, </span>
+<span>Surat, </span>
+<span>Jalandhar, </span>
+<span>Patna, </span>
+<span>Ludhiana, </span>
+<span>Ahmedabad, </span>
+<span>Nashik, </span>
+<span>Madurai, </span>
+<span>Kanpur, </span>
+<span>Aurangabad </span>
                 </p>
               </div>
               < div className="CD-d CD-dimg">
                 <h2>Links</h2>
-                <img src={ps}/>
+                <img src={ps} alt="playstore"/>
                 <br/>
-                <img src={gp} />
+                <img src={gp} alt="google pay" />
               </div>
               </div>
               <hr/>

@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  MDBDropdown,
-  MDBDropdownMenu,
-  MDBDropdownToggle,
-  MDBDropdownItem,
-} from "mdb-react-ui-kit";
 import { useNavigate } from "react-router-dom";
 export default function AdminAside() {
   const navigate = useNavigate();
@@ -73,7 +67,7 @@ export default function AdminAside() {
               onChange={(e) => {
                 e.preventDefault();
                 const selectedValue = e.target.value;
-                console.log(selectedValue);
+            
                 switch (selectedValue) {
                   case "Sofa":
                     e.preventDefault();
@@ -93,6 +87,8 @@ export default function AdminAside() {
                     break;
                   case "appliances":
                     navigate("/Admin/Products/Appliances");
+                    break;
+                  default:
                     break;
                 }
               }}
