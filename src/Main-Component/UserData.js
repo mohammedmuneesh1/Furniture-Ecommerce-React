@@ -146,4 +146,21 @@ export const UserData=[{
     }],
     type:"user"
 }
+,
+{
+    id:10,
+    name:"ajmal favas",
+    password:"ajmal123",
+    email:"ajmalfavas@gmail.com",
+    order:[],
+    type:"user"
+},
+{
+    id:11,
+    name:"jassim",
+    password:"ajmal123",
+    email:"ajmalfavas@gmail.com",
+    order:[],
+    type:"user"
+}
 ]
