@@ -92,13 +92,13 @@
   appearance: textfield;
 }
 
-.number-input input[type=number]::-webkit-inner-spin-button,
-.number-input input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+.number-input input[type="number"]::-webkit-inner-spin-button,
+.number-input input[type="number"]::-webkit-outer-spin-button {
+  /* -webkit-appearance: none; */
 }
 
 .number-input button {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   background-color: transparent;
   border: none;
   align-items: center;
@@ -112,7 +112,7 @@
 .number-input button:after {
   display: inline-block;
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   transform: translate(-50%, -50%);
 }
@@ -121,19 +121,19 @@
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.number-input input[type=number] {
+.number-input input[type="number"] {
   text-align: center;
 }
 
 .number-input.number-input {
   border: 1px solid #ced4da;
   width: 10rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .number-input.number-input button {
   width: 2.6rem;
-  height: .7rem;
+  height: 0.7rem;
 }
 
 .number-input.number-input button.minus {
@@ -142,25 +142,25 @@
 
 .number-input.number-input button:before,
 .number-input.number-input button:after {
-  width: .7rem;
+  width: 0.7rem;
   background-color: #495057;
 }
 
-.number-input.number-input input[type=number] {
+.number-input.number-input input[type="number"] {
   max-width: 4rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 1px solid #ced4da;
-  border-width: 0 1px;
+  border-width: 0px 1px;
   font-size: 1rem;
   height: 2rem;
   color: #495057;
 }
 
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color:transparent) {
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .number-input.def-number-input.safari_only button:before,
     .number-input.def-number-input.safari_only button:after {
-      margin-top: -.3rem;
+      margin-top: -0.3rem;
     }
   }
 }
@@ -169,15 +169,19 @@
   border: none;
 }
 
-.shopping-cart .def-number-input.number-input input[type=number] {
+.shopping-cart .def-number-input.number-input input[type="number"] {
   max-width: 2rem;
   border: none;
 }
 
-.shopping-cart .def-number-input.number-input input[type=number].black-text,
-.shopping-cart .def-number-input.number-input input.btn.btn-link[type=number],
-.shopping-cart .def-number-input.number-input input.md-toast-close-button[type=number]:hover,
-.shopping-cart .def-number-input.number-input input.md-toast-close-button[type=number]:focus {
+.shopping-cart .def-number-input.number-input input[type="number"].black-text,
+.shopping-cart .def-number-input.number-input input.btn.btn-link[type="number"],
+.shopping-cart
+  .def-number-input.number-input
+  input.md-toast-close-button[type="number"]:hover,
+.shopping-cart
+  .def-number-input.number-input
+  input.md-toast-close-button[type="number"]:focus {
   color: #212529 !important;
 }
 
@@ -187,7 +191,7 @@
 
 .shopping-cart .def-number-input.number-input button:before,
 .shopping-cart .def-number-input.number-input button:after {
-  width: .5rem;
+  width: 0.5rem;
 }
 
 .shopping-cart .def-number-input.number-input button.minus:before,
