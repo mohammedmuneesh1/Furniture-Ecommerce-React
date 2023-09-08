@@ -18,6 +18,7 @@
 /*<Crousel/> End here*/
 
 /*<Intromsg> start here */
+
 .img-p1 {
   text-align: center;
 }
@@ -52,7 +53,7 @@
   text-align: center;
 }
 .img-p2 img {
-  max-width: 33%; /* Set your desired width as a percentage */
+  max-width: 33%; 
   height: auto;
   margin: 0.2rem 0rem;
 }

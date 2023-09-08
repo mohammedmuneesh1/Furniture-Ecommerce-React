@@ -5,12 +5,13 @@
   display: grid;
   min-height: 100vh;
   grid-template-columns: 0.4fr 1fr 1fr;
-  grid-template-rows: 80px;
-  /*CODE FOR NAV,ASIDE TO FIX*/
+  grid-template-rows: 80px;   /*CODE FOR NAV,ASIDE TO FIX*/
   position: relative;
   overflow-y: auto;
 }
+
 /*admin head design start*/
+
 .a-nav {
   grid-area: 1/2/1/4;
   background-color: #61677a;
@@ -20,14 +21,17 @@
   top: 0;
   z-index: 1;
 }
+
 .a-nav h2 {
   font-family: "Courier New", Courier, monospace;
   margin: 0px;
   color: white;
 }
+
 /*admin head design end*/
 
 /*dash design start here*/
+
 .a-dash {
   grid-area: 1/1/4/1;
   background: #313131;
@@ -47,7 +51,6 @@
 .a-dash ul li {
   margin: 20px 0px;
   width: 87px;
-
   padding: 0px;
   display: flex;
   flex-direction: row;
@@ -123,7 +126,7 @@
   padding: 25px 40px 20px 40px;
   width: 280px;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgb(195, 195, 195, 1);
+  box-shadow: 0px 2px 4px rgb(195, 195, 195, 1);
 }
 
 .content-box h2 {
@@ -131,9 +134,8 @@
 }
 
 .content-box p {
-  margin: 0;
+  margin: 0px;
 }
-
 
 @media all and(max-width:600px) {
   .content-box {
@@ -144,13 +146,15 @@
     box-shadow: 0 2px 4px rgb(195, 195, 195, 1);
   }
 }
+
 /*AdminBody.js start here*/
 
 /*producaddpage.js start here*/
+
 .pap {
   width: 90%;
   background: whitesmoke;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .input-container {
   position: relative;
