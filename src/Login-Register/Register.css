@@ -32,17 +32,12 @@ form {
 .sign-in {
   margin-bottom: 2rem;
 }
+
 .gradient-custom-2 {
+ 
   background: #fccb90;
-  background: -webkit-linear-gradient(
-    to right,
-    #ee7724,
-    #d8363a,
-    #dd3675,
-    #b44593
-  );
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
   background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-  background:#dd3675;
 }
 
 
