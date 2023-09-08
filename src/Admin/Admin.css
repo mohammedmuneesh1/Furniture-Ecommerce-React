@@ -1,596 +1,180 @@
-/* *{
-    margin:0px;
-    padding:0px;
-    box-sizing: 0px;
-}
-.a-body{
-    width:100%;
-    min-height:100vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-} */
-/*dash board design start here*/
-/* .a-dash{
-    min-width:15%;
-    min-height:100vh;
-    background:#313131;
-    color:white;
- 
-
-
-}
-.a-dash h2{
-    font-size:1.8rem;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top:30px;
-    text-align: center;
-    
-}
-.a-dash ul {
-    list-style: none;
-    text-align: left;
-    font-size:.9rem;
-    padding:0px;
-    padding-left:.8rem;
-}
-.a-dash ul li {
-    margin:1rem  0px;
-    padding:0px;
-    max-width:90px;
-    
-    
-}
-.a-dash select{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding:2px 6.5px;
-    background:#4E4FEB;
-} */
-/*dash board design end here*/
-
-
-
-/*content design start here*/
-/* .a-content{
-    min-width:90%;
-    background:royalblue;    
-} */
-
-
-/*header start here*/
-
-
-/* 
-.a-head{
-    font-family: 'Courier New', Courier, monospace;
-    font-size:1.35em;
-    letter-spacing: .2px;
-    width:100%;
-    padding:1rem 2rem;
-    background:#f5f5f5;
-    text-align: center;
-    
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*header end here here*/
-/*content design end here */
-
-/*AdminHead.js start*/
-
-/* 
-*{
-    padding:0px;
-    margin:0px;
-    box-sizing: border-box;
-}
-header{
-   width:85.5%;
-    position: fixed;
-    right:0px;
-    padding:1.2rem 3rem;
-    font-size: 1.5rem;
-    background:blue;
-    text-align: center;
-    z-index:1;
-} */
-
-
-/*AdminHead.js End*/
-
-
-
-
-
-
-
-/*AdminAside.js start*/
-/* aside{
-    background:#313131;
-    position:fixed;
-    top:0px;
-    position: relative;
-    left:0px;
-    width:200px;
-    min-height: 100vh;
-    color:white;
-
-} */
-/* aside {
-    background: #313131;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    min-height: 100vh;
-    color: white;
-    z-index:2;
-}
-
-aside h2{
-    text-align: center;
-    padding-top:30px;
-}
-
-aside ul {
-    list-style: none;
-    padding:0px;
-    margin:0px;
-    text-align: left;
-}
-aside ul li {
-    margin:1rem auto;
-    width:90px;
-  
-
-}
-aside ul select{
-    background:#313131;
-    color:white;
-    padding:5px 7px;
-    border-radius: 5px;
-    width:90px;
-}
-
- */
-
-
-
-
-/*AdminAside.js end*/
-
-
-
-/*a-body*/
-/* .a-container{
-    width:1180px;
-    position: absolute;
-    top:10%;
-    right:0px;
-    position: absolute;
-    top:0%;
-
-
-
-
-    width:1000px;
-    background:red;
-    position: relative;
-    right:0px;
-    top:0px;
-
-
-} */
-/* 
-.a-container {
-    width: calc(100% - 200px); 
-    background:red;
-    position: absolute;
-    top: 10.5%;
-    right: 0;
-    min-height: 100vh;
-} */
-
-/* .a-container {
-    width: 1000px;
-    background: red;
-    position: absolute;
-    top: 0;
-    right: 0;
-}  code of mine  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 1200px) {
-    .a-container {
-        width: calc(100% - 180px); Adjust aside width for this breakpoint
-    }
-}
- */
-/* 
-@media all and (max-width:800px){
-    header{
-        text-align: right;
-    }
-    aside{
-        width:180px;
-    }
-    .a-container{
-        width: calc(100%-180px);
-    }
-}
-
-
-@media all and (max-width:500px){
-    aside{
-        width:150px;
-    }
-    .a-container{
-        width: calc(100%-140px);
-    }
-    aside h2{
-        font-size: 1.2rem;
-        text-align: left;
-    }
-    header{
-        font-size:0.8rem;
-        
-    }
-    aside ul li  {
-        margin:.8rem 0rem;
-        font-size:.8rem;
-    }
-    aside ul li span {
-        font-size:0.1rem;
-    }
-
-}
-@media all and (max-width:450px){
-    header{
-        font-size:.8rem;
-    }
-    aside{
-        width:100px;
-    }
-    aside h2{
-        text-align: center;
-    }
-    aside li{
-        padding:0px;
-    }
-    aside ul li select {
-        width:90px;
-    }
-}
-@media all and (max-width:350px){
-    aside{
-        width:80px;
-    }
-    aside ul li{
-        width:70px;
-    }
-    aside ul li select {
-        width:70px;
-    }
-
-} */
-
-
 /*design using grid start*/
-.a-home{
-    width:100%;
-    background: lightgoldenrodyellow;
-    display: grid;
-    min-height:100vh;
-    grid-template-columns:0.4fr 1fr 1fr;
-    grid-template-rows:80px;
-    /*CODE FOR NAV,ASIDE TO FIX*/
-    position: relative;
-    overflow-y: auto;
-
+.a-home {
+  width: 100%;
+  background: lightgoldenrodyellow;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 0.4fr 1fr 1fr;
+  grid-template-rows: 80px;
+  /*CODE FOR NAV,ASIDE TO FIX*/
+  position: relative;
+  overflow-y: auto;
 }
 /*admin head design start*/
-.a-nav{
-    grid-area:1/2/1/4;
-    background-color:#61677A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top:0;
-    z-index: 1;
+.a-nav {
+  grid-area: 1/2/1/4;
+  background-color: #61677a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 1;
 }
-.a-nav h2{
-    font-family: 'Courier New', Courier, monospace;
-    margin:0px;
-    color:white;
+.a-nav h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0px;
+  color: white;
 }
 /*admin head design end*/
 
-
-
-
-
 /*dash design start here*/
-.a-dash{
-    grid-area:1/1/4/1;
-    background:#313131;
-    color:white;
-    height:100%;
+.a-dash {
+  grid-area: 1/1/4/1;
+  background: #313131;
+  color: white;
+  height: 100%;
 }
-.a-dash h3{
-    padding-left:10px;
-    padding-top:30px;
+.a-dash h3 {
+  padding-left: 10px;
+  padding-top: 30px;
 }
 .a-dash ul {
-    list-style: none;
-    padding:0px;
-    margin:0px;
-    margin-left:20px;
-    
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px;
 }
 .a-dash ul li {
-  
-    margin:20px 0px;
-    width:87px;
-  
-    padding:0px;
-    display: flex;
-    flex-direction: row;
-    
+  margin: 20px 0px;
+  width: 87px;
 
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
 }
 
 .a-dash ul li select {
-    background:#313131;
-    color:white;
-    outline: none;
-    padding:5px 0px;
-    width:80px;
-    border:none;
-    border-radius: 5px;
+  background: #313131;
+  color: white;
+  outline: none;
+  padding: 5px 0px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
 }
 /*dash design end here*/
 
-
-
-
-
-
-.a-body{
-    grid-area:2/2/4/4;
-    background:white;
-    overflow: scroll;
-    height:100vh;        /* remove if responsive needed */
-
+.a-body {
+  grid-area: 2/2/4/4;
+  background: white;
+  overflow: scroll;
+  height: 100vh; /* remove if responsive needed */
 }
 /*design using grid end*/
-@media all and (max-width:830px){
-    .a-body tbody th,  td{
-        padding:0px !important;
-        width:10px !important;
-    }
-    .a-body tbody button{
-        /* padding:2px 5px; */
-    }
+@media all and (max-width: 830px) {
+  .a-body tbody th,
+  td {
+    padding: 0px !important;
+    width: 10px !important;
+  }
 }
-@media all and (max-width:700px){
-    .a-body tbody th,  td{
-        padding:0px !important;
-        width:50px;
-    }
+@media all and (max-width: 700px) {
+  .a-body tbody th,
+  td {
+    padding: 0px !important;
+    width: 50px;
+  }
 }
 
 @media all and (max-width: 490px) {
+  .a-home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr;
+    min-height: 125vh;
+  }
+}
+@media all and (max-width: 365px) {
+  .a-home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr;
+    min-height: 150vh;
+  }
+}
+@media all and (max-width: 305px) {
+  .a-home {
+    min-height: 160vh;
+  }
+}
+@media all and (max-width: 290px) {
+  .a-home {
+    min-height: 170vh;
+  }
+}
+@media all and (max-width: 260px) {
+  .a-home {
+    min-height: 220vh;
+  }
+}
 
-    .a-home {
-        grid-template-columns: 1fr;
-         grid-template-rows: .1fr;
-         min-height:125vh;
-    } 
-  
- 
-  }
-  @media all and (max-width: 365px) {
+/*AdminBody.js start here*/
 
-    .a-home {
-        grid-template-columns: 1fr;
-         grid-template-rows: .1fr;
-         min-height:150vh;
-    } 
-  
- 
-  }
-  @media all and (max-width:305px){
-    .a-home{
-        min-height:160vh;
-    }
-  }
-  @media all and (max-width:290px){
-    .a-home{
-        min-height:170vh;
-    }
-  }
-  @media all and (max-width:260px){
-    .a-home{
-        min-height:220vh;
-    }
-  }
+.content-box {
+  background-color: #fff;
+  padding: 25px 40px 20px 40px;
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgb(195, 195, 195, 1);
+}
+
+.content-box h2 {
+  margin-bottom: 15px;
+}
+
+.content-box p {
+  margin: 0;
+}
 
 
-  /*AdminBody.js start here*/
-
-  .content-box {
-    background-color: #fff;
-    padding: 25px 40px 20px 40px;
-    width: 280px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgb(195, 195, 195, 1);
-  } 
-  
-  .content-box h2 {
-    margin-bottom: 15px;
-  }
-  
-  .content-box p {
-    margin: 0;
-  }
-@media all and(max-width:600px){
-    
+@media all and(max-width:600px) {
   .content-box {
     background-color: #fff;
     padding: 25px 35px 15px 35px !important;
     width: 200px !important;
     border-radius: 15px !important;
     box-shadow: 0 2px 4px rgb(195, 195, 195, 1);
-  } 
-
+  }
 }
-  /*AdminBody.js start here*/
- 
+/*AdminBody.js start here*/
 
-  /*producaddpage.js start here*/
-  .pap{
-    width:90%;
-    background:whitesmoke;
-    margin:0 auto;
+/*producaddpage.js start here*/
+.pap {
+  width: 90%;
+  background: whitesmoke;
+  margin: 0 auto;
+}
+.input-container {
+  position: relative;
+  margin: 20px auto;
+}
 
-    
-  }
-  .input-container {
-   position: relative;
-    margin:20px auto;
-    
+.input-container input {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  }
+.input-container label {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  transition: transform 0.2s, font-size 0.2s;
+  pointer-events: none;
+  color: #333;
+}
 
-  .input-container input {
-    width: 300px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    
-  }
-
-  .input-container label {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    transition: transform 0.2s, font-size 0.2s;
-    pointer-events: none;
-    color: #333;
-  }
-
-  .input-container input:focus + label {
-    transform: translateY(-20px);
-    font-size: 12px;
-  }
-  /*producaddpage.js end here*/
+.input-container input:focus + label {
+  transform: translateY(-20px);
+  font-size: 12px;
+}
+/*producaddpage.js end here*/
