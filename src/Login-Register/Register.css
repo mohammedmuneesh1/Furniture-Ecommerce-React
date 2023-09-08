@@ -34,17 +34,16 @@ form {
 }
 .gradient-custom-2 {
   background: #fccb90;
-}
-  /* background: -webkit-linear-gradient(
+  background: -webkit-linear-gradient(
     to right,
     #ee7724,
     #d8363a,
     #dd3675,
     #b44593
   );
-
   background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-  background:#dd3675; */
+  background:#dd3675;
+}
 
 
 @media (min-width: 768px) {
