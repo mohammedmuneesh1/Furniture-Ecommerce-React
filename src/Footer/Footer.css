@@ -1,25 +1,24 @@
 /* license start here*/
+.L-text{
+    font-size:.9rem;
+    color:#848484;
+    letter-spacing: .1rem;
 
-.L-text {
-  font-size: 0.9rem;
-  color: #848484;
-  letter-spacing: 0.1rem;
 }
 
 /*terms start here*/
-
-.terms-main {
-  max-width: 100%;
-  background: white;
+.terms-main{
+    max-width:100%;
+    background:white
 }
-
-.terms-main ul {
-  list-style: none;
-  padding: 0.5rem 0rem;
-  transition: 0.2s all ease;
-  text-align: center;
-  margin-bottom: 0px;
-  color: #848484;
+.terms-main ul{
+    list-style: none;
+    padding:0.5rem 0rem;
+    transition:0.2s all ease;
+    text-align: center;
+    margin-bottom: 0px;
+    color:#848484;
+    
 }
 
 .terms-main ul li {
@@ -29,12 +28,14 @@
 }
 
 /*card start here*/
+.cards-main{
+    max-width: 100%;
+    text-align: center;
+    padding:5px 0px 0px;
+    
 
-.cards-main {
-  max-width: 100%;
-  text-align: center;
-  padding: 5px 0px 0px;
 }
+
 
 .cards-main p {
   font-family: "Playfair Display", serif;
@@ -48,28 +49,32 @@
   margin: 0px 5px;
   padding-bottom: 20px;
 }
+/* .cards-main hr{
+    width: 80%;
+    margin: auto;
+    color:#848484;
+} */
 
 
 /*Card end here*/
 
 /*SocialMedia start here*/
-
-.socialmedia-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+.socialmedia-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
-.socialmedia-main p {
-  font-size: 1.2rem;
-  letter-spacing: 0.2px;
-  font-family: monospace;
-}
+.socialmedia-main p{
+    font-size:1.2rem;
+    letter-spacing: .2px;
+    font-family:monospace;
 
-.socialmedia-main .socialmedia-icon .sm-icon {
-  font-size: 1.5rem;
-  margin: 0rem 1rem;
+}
+.socialmedia-main .socialmedia-icon .sm-icon{
+    font-size:1.5rem;
+    margin:0rem 1rem;
 }
 /*SocialMedia end here*/
 
@@ -78,9 +83,9 @@
 .CD-btn {
   display: none;
 }
+.CD-main{
+    margin-bottom:3rem;
 
-.CD-main {
-  margin-bottom: 3rem;
 }
 
 .CD-main .CD-details {
@@ -89,29 +94,29 @@
   color: black;
   overflow: hidden;
 }
-
-
-.email-sub {
-  text-align: center;
-  padding-top: 10px;
+/* .CD-details input{
+    color:black;
+} */
+.email-sub{
+    text-align: center;
+    padding-top:10px;
 }
+.email-sub span{
+    font-weight: bold;
+    font-size:1rem;
+    letter-spacing: .4px;
+    font-family: 'Bricolage Grotesque', sans-serif;
 
-.email-sub span {
-  font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: 0.4px;
-  font-family: "Bricolage Grotesque", sans-serif;
 }
-
-.email-sub input {
-  width: 30rem;
-  margin: 0px 15px;
-  padding: 8px 5px;
-  outline: none;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  background: rgb(221, 221, 225);
+.email-sub input{
+    width:30rem;
+    margin:0 15px;
+    padding:8px 5px;
+    outline:none;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    background:rgb(221, 221, 225);
 }
 .email-sub button {
   padding: 8.5px 10px;
@@ -129,38 +134,37 @@
   font-size: 0.9rem;
   font-family: "Open Sans", sans-serif;
 }
-
-.CD-brand {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 40px;
+.CD-brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:40px;
 }
-
-.CD-brand .CD-d {
-  width: 300px;
-  min-height: 200px;
+.CD-brand .CD-d{
+    
+    width:300px;
+    min-height:200px;
 }
+.CD-brand .CD-d a{
+    font-size:1rem;
+    color:rgb(60, 59, 59);
+    transition: .2s ;
+    
 
-.CD-brand .CD-d a {
-  font-size: 1rem;
-  color: rgb(60, 59, 59);
-  transition: 0.2s;
 }
+.CD-brand .CD-d a:hover{
+    color:black;
 
-.CD-brand .CD-d a:hover {
-  color: black;
 }
 
 .CD-brand .CD-d h2 {
   font-size: 1.24rem;
   text-align: center;
 }
-
-.CD-dimg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.CD-dimg{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 .CD-dimg h2 {
   margin-bottom: 2rem;
@@ -301,69 +305,80 @@
     font-size: 0.6rem;
   }
 }
-@media all and (max-width: 790px) {
-  .terms-main ul li {
-    margin: 0rem 1.1rem;
-    font-size: 0.7rem;
-  }
-  .L-text {
-    font-size: 0.7rem;
-  }
-  .cards-main p {
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.6rem;
-  }
-  .socialmedia-main {
-    justify-content: space-between;
-  }
-  .socialmedia-main p {
-    font-size: 1rem;
-  }
+@media all and (max-width:790px){
+    .terms-main ul li {
+        margin:0rem 1.1rem;
+        font-size:.7rem;
+    }
+    .L-text{
+        font-size:.7rem;
+    }
+    .cards-main p{
+       
+        font-size:1rem;
+        letter-spacing: .5px;
+        margin-bottom:.6rem;
+    }
+    .socialmedia-main{
+        justify-content: space-between;
+    }
+    .socialmedia-main p{
+        font-size:1rem;
+    }
+    .socialmedia-main .socialmedia-icon .sm-icon{
+        font-size:1.3rem;
+        margin:0rem .8rem;
+    }
 
-  .socialmedia-main .socialmedia-icon .sm-icon {
-    font-size: 1.3rem;
-    margin: 0rem 0.8rem;
-  }
+    .email-sub span{
+        font-weight: bold;
+        font-size:.7rem;
+        letter-spacing: .1px;
+    
+    }
+    .email-sub input{
+        width:20rem;
+        padding:4px 5px;
+        background:rgb(221, 221, 225);
+    }
+    .email-sub button{
+        padding:4px 10px;
+    }
+    
 
-  .email-sub span {
-    font-weight: bold;
-    font-size: 0.7rem;
-    letter-spacing: 0.1px;
-  }
 
-  .email-sub input {
-    width: 20rem;
-    padding: 4px 5px;
-    background: rgb(221, 221, 225);
-  }
-  .email-sub button {
-    padding: 4px 10px;
-  }
+
+
+
+
+
+
+
 }
-@media all and (max-width: 640px) {
-  .terms-main ul li {
-    margin: 0rem 0.6rem;
-    font-size: 0.6rem;
-  }
+@media all and (max-width:640px){
+    .terms-main ul li {
+        margin:0rem .6rem;
+        font-size:.6rem;
+    }
+    .L-text{
+        font-size:.6rem;
+    }
+    .cards-main img {
+        width:45px;
+        margin:0px 4px;
+        padding-bottom:15px;
+    }
+ 
+    .socialmedia-main p{
+        font-size:.8rem;
+    }
+    .socialmedia-main .socialmedia-icon .sm-icon{
+        font-size:1rem;
+        margin:0rem .8rem;
+    }
 
-  .L-text {
-    font-size: 0.6rem;
-  }
 
-  .cards-main img {
-    width: 45px;
-    margin: 0px 4px;
-    padding-bottom: 15px;
-  }
 
-  .socialmedia-main p {
-    font-size: 0.8rem;
-  }
-  .socialmedia-main .socialmedia-icon .sm-icon {
-    font-size: 1rem;
-    margin: 0rem 0.8rem;
-  }
 }
 @media all and (max-width: 580px) {
   .email-sub {
@@ -421,21 +436,37 @@
     margin-bottom: -15px;
   }
 
-  .email-sub {
-    text-align: center;
-  }
+    .email-sub{
+        text-align:center;
+        
+    }
+    .email-sub span{
+        font-size:.9rem;
+      
+    
+    }
+    .email-sub input{
+        width:10rem;
+        padding:3px 0px;
+        
+    }
+    .email-sub button{
+        padding:3px 7px;
+    }
 
-  .email-sub span {
-    font-size: 0.9rem;
-  }
-  
-  .email-sub input {
-    width: 10rem;
-    padding: 3px 0px;
-  }
-  .email-sub button {
-    padding: 3px 7px;
-  }
+    
+
+
+
+
+
+
+
+
+
+
+   
+   
 }
 @media all and (max-width: 450px) {
   .terms-main ul li {
