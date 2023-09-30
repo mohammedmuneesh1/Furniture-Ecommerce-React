@@ -117,7 +117,7 @@ const searchfn=(e)=>{
         </div>
 
         <div className="brand">
-          <h1  style={{cursor:"pointer"}} onClick={()=>navigate("/")} >pepperfry</h1>
+          <h1  style={{cursor:"pointer",fontFamily:"serif",letterSpacing:"3px"}} onClick={()=>navigate("/")} >Earthly</h1>
         </div>
         <div className="brand-right">
 

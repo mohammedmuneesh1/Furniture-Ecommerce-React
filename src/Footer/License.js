@@ -5,7 +5,7 @@ const License=()=>{
     <a className=' text-grey L-text' href='https://mdbootstrap.com/'>
 
 
-    © Copyright Hermen Miller Limited
+    © Copyright Earthly Limited
     </a>
   </div>
 
